@@ -42,3 +42,11 @@ sr.reveal(`.home-text, .home-img,
             .contact-box`, {
     interval: 200
 });
+document.addEventListener('keydown', function(event) {
+  if (event.keyCode == 123) { // F12
+    event.preventDefault();
+  }
+  if (event.ctrlKey && event.shiftKey && event.keyCode == 'I'.charCodeAt(0)) { // Ctrl+Shift+I
+    event.preventDefault();
+  }
+});
