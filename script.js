@@ -50,3 +50,9 @@ document.addEventListener('keydown', function(event) {
     event.preventDefault();
   }
 });
+// Bloquear Ctrl + U (ver código-fonte)
+document.addEventListener('keydown', function(event) {
+    if (event.ctrlKey && event.key === 'u') { // Ctrl + U
+        event.preventDefault();
+    }
+});
